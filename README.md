@@ -1,4 +1,4 @@
-# NPM v5 dedupes necessary modules causing failures
+# NPM v5 dedupes necessary modules causing failures at runtime
 If module A requires module B which has a dependency of external module D. And module B has another module C which also includes D. The package will not be installed.
 ```
 /A
@@ -10,6 +10,12 @@ If module A requires module B which has a dependency of external module D. And m
  -> D
 ```
 
+## How to run
+Using npm v5 `npm i npm@latest -g` within the `module-a` folder.
+
+Run `npm install` and error occurs at runtime with `npm start`. 
+
+## Known limitations
 It might be a known limitation mentioned in ["Limitations of npm's Install Algorithm"](https://docs.npmjs.com/cli/install).
 
 ## Possible related tickets
