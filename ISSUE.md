@@ -28,7 +28,7 @@ module-a@1.0.0 /Users/james/Work/npm-problem/module-a
     └── lodash@4.17.4 deduped
 ```
 
-The `npm ls` above structures the application with symlinks how we would expect but the dedupe process means module-c does not install a `node_modules/` folder with module D (shown as lodash). It's notable to mention the module-c is symlinked into module-b but this is not visible in the output above. I'd expect to see `module-c@1.0.0 -> /Users/james/Work/npm-problem/module-c` as well as the module-a and module-b being symlinks.  
+The `npm ls` above structures the application with symlinks how we would expect but the dedupe process means module-c does not install a `node_modules/` folder with module D (shown as lodash). It's notable to mention the module-c is symlinked into module-b but this is not visible in the output above. I'd expect to see `module-c@1.0.0 -> /Users/james/Work/npm-problem/module-c` but this does not happen for nested local modules.
 
 #### How can the CLI team reproduce the problem?
 The problem can be reproduced using the repository below.
