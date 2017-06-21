@@ -35,13 +35,8 @@ The problem can be reproduced using the repository below.
 
 https://github.com/sidhuko/npm5-dedupes-local-modules
 
+Please view the README, the error happens at runtime and not at installation.
 
-<!--
-    Please a complete description of how to reproduce the problem.
-    Include a gist of your npm-debug.log file.
-    If you've never used gist.github.com, start here:
-      https://github.com/EmmaRamirez/how-to-submit-your-npm-debug-log
--->
 
 ### supporting information:
 
